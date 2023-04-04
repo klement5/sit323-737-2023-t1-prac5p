@@ -88,7 +88,7 @@ app.get("/add", (req,res) =>{
     }
 });
 const port=3040;
-var a= add('5','8');
+var a= add('5'+'8');
 console.log(a);
 app.listen(port,()=>{
     console.log("hello im listening to port" + port);

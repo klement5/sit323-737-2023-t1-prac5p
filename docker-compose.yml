@@ -1,1 +1,9 @@
-We were just told to make a dummy of this file (by the tutor)
+version: '3'
+services:
+    app:
+        build: .
+        image: klement55/calculator-app
+        restart: always
+        ports:
+            - 42623:3040
+        command: node calculator.js
